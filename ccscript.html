@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+<TITLE>GNU ccScript - GNU Package - Open Source Telecom (OST)</TITLE>
+<LINK REV="made" HREF="mailto:webmasters@www.gnu.org">
+<META NAME="keywords" CONTENT="ccscript">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#1F00FF" ALINK="#FF0000" VLINK="#9900DD">
+<H3>GNU ccScript</H3>
+<A HREF="/graphics/agnuhead.html"><IMG SRC="/graphics/gnu-head-sm.jpg"
+   ALT=" [image of the Head of a GNU] "
+   WIDTH="129" HEIGHT="122"></A>
+
+[
+<!-- Please keep this list alphabetical -->
+<!-- PLEASE UPDATE THE LIST AT THE BOTTOM OF THE PAGE TOO! -->
+  <A HREF="./ccscript.html">English</A>
+<!-- | A HREF="/boilerplate.LG.html" LANGUAGE /A  -->
+<!-- Please keep this list alphabetical -->
+<!-- PLEASE UPDATE THE LIST AT THE BOTTOM OF THE PAGE TOO! -->
+]
+
+<P>
+<!-- Replace this list with the page's contents. -->
+<H4>Table of Contents</H4>
+<UL>
+  <LI><A HREF="#introduction" NAME="TOCintroduction">Introduction to GNU ccScript</A>
+  <LI><A HREF="#downloading" NAME="TOCdownloading">Downloading GNU ccScript</A>
+  <LI><A HREF="#contributing" NAME="TOCcontributing">Contributing to GNU ccScript</A>
+</UL>
+
+<P>
+<HR>
+<P>
+<H4><A HREF="#TOCintroduction" NAME="introduction">Introduction to GNU ccScript</A></H4>
+<P>
+GNU ccScript is a C++ class framework for creating a virtual machine 
+execution system for use with and as a scripting/assembler language for 
+state-transition driven realtime systems.  The most common example of this
+is as the core of the scripting engine found in GNU Bayonne.
+<P>
+GNU ccScript uses a class hierarchy and one extends the ScriptInterp base 
+class to create a new dialect localized for a given applications.  One 
+then binds script keywords to method calls in the derived class.  This
+aspect of GNU ccScript resembles in C++ the process of how one might
+localize tcl.
+<P>
+GNU ccScript is intended for use where step execution is important, and 
+where each step is in response to a callback event or a state machine 
+transition.  It offers deterministic execution and low overhead so that 
+many concurrent instances can be running together.
+<P>
+GNU ccScript can execute text files which form the basis of a script 
+language.  However, in addition to offering step machine execution, 
+GNU ccScript loads all scripts into an active image at once.  This is for 
+performance, as all operations in the script system, to assure 
+deterministic execution, are in memory.
+<P>
+GNU ccScript also offers the ability to load new scripts in-mass.  
+Existing active sessions operate on the currently loaded scripts, and new
+sessions are offered the new script.  When the last active session on an 
+old script set completes, the entire script set is flushed from memory.  
+This enables one to operate scripted servers like GNU Bayonne without
+downtime to rebuild script images in memory.
+<P>
+GNU ccScript is derived from and requires the use of GNU Common C++.  It 
+is not a stand-alone class library.
+<P>
+<H4><A HREF="#TOCdownloading" NAME="downloading">Downloading GNU ccScript</A></H4>
+<P>
+Starting with release 1.7.0, GNU ccScript will be found on 
+<A HREF="ftp://ftp.gnu.org/pub/gnu/ccscript/">ftp://ftp.gnu.org/pub/gnu/ccscript/</A>
+or one of <A HREF="/prep/ftp.html">the mirrors</A>.
+<P>
+GNU ccScript may be
+available from other sites in various "package" formats, including 
+GNU/Linux "RPM" packages, ".pkg" files under various Unix operating systems,
+etc.  I do encourage people to distribute GNU ccScript in a package form
+where convenient for installation, so long as source is also made available. 
+<P>
+<H4><A HREF="#TOCcontributing" NAME="contributing">Contributing to GNU ccScript</A></H4>
+<P>
+As the current GNU ccScript maintainer, I am very open to bringing new 
+ideas and code into GNU ccScript.  In particular, I am looking for help 
+with documentation.  Anonymous cvs access 
+is maintained for GNU ccScript thru savannah, and I would be happy to 
+receive and  evaluate patches for inclusion in future releases.  A 
+standard e-mail mailing list for GNU ccScript will be available shortly on 
+<A HREF="mailto:ccscript-devel@gnu.org">ccscript-devel@gnu.org</A>.  
+Feel free to send any bug reports, patches, and questions to this list.
+<P>
+<HR>
+
+[
+<!-- Please keep this list alphabetical -->
+<!-- PLEASE UPDATE THE LIST AT THE TOP OF THE PAGE TOO! -->
+  <A HREF="./ccscript.html">English</A>
+<!-- | A HREF="/boilerplate.LG.html" LANGUAGE /A  -->
+<!-- Please keep this list alphabetical -->
+<!-- PLEASE UPDATE THE LIST AT THE TOP OF THE PAGE TOO! -->
+]
+
+<P>
+Return to <A HREF="/home.html">GNU's home page</A>.
+<P>
+
+Please send FSF &amp; GNU inquiries &amp; questions to 
+
+<A HREF="mailto:gnu@gnu.org"><EM>gnu@gnu.org</EM></A>.
+There are also <A HREF="/home.html#ContactInfo">other ways to
+contact</A> the FSF.
+<P>
+
+Please send comments on these web pages to
+
+<A HREF="mailto:webmasters@gnu.org"><EM>webmasters@gnu.org</EM></A>,
+send other questions to
+<A HREF="mailto:gnu@gnu.org"><EM>gnu@gnu.org</EM></A>.
+<P>
+Copyright (C) 2001 Free Software Foundation, Inc.,
+59 Temple Place - Suite 330, Boston, MA  02111,  USA
+<P>
+Verbatim copying and distribution of this entire article is
+permitted in any medium, provided this notice is preserved.
+<P>
+Updated:
+<!-- hhmts start -->
+ 5 Oct 2001 dyfet
+<!-- hhmts end -->
+<HR>
+</BODY>
+</HTML>
