@@ -1,133 +1,203 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="KEYWORDS" content="GNU ccScript3,Download Page" />
-<meta name="robots" content="index,follow" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link title="Creative Commons" type="application/rdf+xml" href="http://wiki.gnutelephony.org/index.php?title=GNU_ccScript3&amp;action=creativecommons" rel="meta" />
-<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
-    <title>GNU ccScript3 - GNU Telephony</title>
-    <style type="text/css" media="screen,projection">/*<![CDATA[*/ @import "/skins/monobook/main.css"; /*]]>*/</style>
-    <link rel="stylesheet" type="text/css" media="print" href="/skins/common/commonPrint.css" />
-    <!--[if lt IE 5.5000]><style type="text/css">@import "/skins/monobook/IE50Fixes.css";</style><![endif]-->
-    <!--[if IE 5.5000]><style type="text/css">@import "/skins/monobook/IE55Fixes.css";</style><![endif]-->
-    <!--[if gte IE 6]><style type="text/css">@import "/skins/monobook/IE60Fixes.css";</style><![endif]-->
-    <!--[if IE]><script type="text/javascript" src="/skins/common/IEFixes.js"></script>
-    <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
-    <script type="text/javascript" src="http://wiki.gnutelephony.org/index.php?title=-&amp;action=raw&amp;gen=js"></script>    <script type="text/javascript" src="/skins/common/wikibits.js"></script>
-    <style type="text/css">/*<![CDATA[*/
-@import "http://wiki.gnutelephony.org/index.php?title=MediaWiki:Monobook.css&action=raw&ctype=text/css&smaxage=18000";
-@import "http://wiki.gnutelephony.org/index.php?title=-&action=raw&gen=css&maxage=18000";
-/*]]>*/</style>              </head>
-  <body                 class="ns-0">
-<div id="titleBar">
-<div id="nav">
-	<div class="navlink"><a href="http://wiki.gnutelephony.org/index.php/Documentation">Documentation</a></div>
-	<div class="navlink"><a href="http://wiki.gnutelephony.org/index.php/Download_Page">Download</a></div>
- 	<div class="navlink"><a href="http://wiki.gnutelephony.org/index.php/Main_Page">Home</a></div>
+<!--#include virtual="/server/header.html" -->
+<!-- Parent-Version: 1.84 -->
+<title>ccScript - GNU Telephony - GNU Project - Free Software Foundation</title>
+<style type="text/css" media="print,screen"><!--
+#content { max-width: 53em; margin: auto; }
+.navlinks p {
+   text-align: center;
+   line-height: 1.8em;
+   padding: 0.1em 1em;
+   border: .1em solid #bbb;
+}
+.navlinks a { line-height: 1.6em; padding: 0 .2em; }
+.summary { width: auto; margin-top: 2.2em; }
+.summary ul { margin-left: 10%; }
+@media (min-width: 33em) {
+  .summary { float: right; width: 10em; margin: 1.3em 0 1em 2em; }
+  .summary ul { margin-left: 1.5%; }
+}
+--></style>
+<!--#include virtual="/server/gnun/initial-translations-list.html" -->
+<!--#include virtual="/server/banner.html" -->
+<h2>GNU ccScript</h2>
+
+<div class="navlinks">
+  <p>
+  &nbsp;<a href="/software/gnucomm/gnucomm.html">GNUComm</a>&nbsp;
+  &nbsp;<a href="/software/bayonne/bayonne.html">Bayonne</a>&nbsp;
+  &nbsp;<a href="/software/sipwitch/sipwitch.html">SIP&nbsp;Witch</a>&nbsp;
+  &nbsp;<a href="/software/commoncpp/commoncpp.html">[u]Common&nbsp;C++</a>&nbsp;
+  &nbsp;ccScript&nbsp;
+  &nbsp;<a href="/software/ccaudio/ccaudio.html">ccAudio2</a>&nbsp;
+  &nbsp;<a href="/software/ccrtp/ccrtp.html">ccRTP</a>&nbsp;
+  &nbsp;<a href="/software/ccrtp/zrtp.html">ZRTP</a>&nbsp;
+  &nbsp;<a href="/software/ccrtp/zrtp4j.html">ZRTP4J</a>&nbsp;
+  </p>
 </div>
-</div>
-    <div id="globalWrapper">
-      <div id="column-content">
-	<div id="content">
-	  <a name="top" id="contentTop"></a>
-	  	  <h1 class="firstHeading">GNU ccScript3</h1>
-	  <div id="bodyContent">
-	    <h3 id="siteSub">From GNU Telephony</h3>
-	    <div id="contentSub"></div>
-	    	    	    <!-- start content -->
-	    <table id='toc' class='toc'><tr><td><div id='toctitle'><h2>Contents</h2></div>
+
+<div class="summary">
+<h3 style="display: none">Contents</h3>
 <ul>
-<li class='toclevel-1'><a href="#Introduction_to_GNU_ccScript3"><span class="tocnumber">1</span> <span class="toctext">Introduction to GNU ccScript3</span></a></li>
-<li class='toclevel-1'><a href="#Current_Status"><span class="tocnumber">2</span> <span class="toctext">Current Status</span></a></li>
-<li class='toclevel-1'><a href="#Downloading_and_Documentation"><span class="tocnumber">3</span> <span class="toctext">Downloading and Documentation</span></a></li>
-<li class='toclevel-1'><a href="#Contributing_to_GNU_ccScript3"><span class="tocnumber">4</span> <span class="toctext">Contributing to GNU ccScript3</span></a></li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#status">Current Status</a></li>
+  <li><a href="#downloading">Downloading</a></li>
+  <li><a href="#documentation">Documentation</a></li>
+  <li><a href="#contributing">Contributing</a></li>
 </ul>
-</td></tr></table>
-<p><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<hr style="display: none" />
+</div>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>GNU ccScript is a C++ class framework for creating a virtual machine
+execution system for use with, and as a scripting/assembler language for
+state-transition driven realtime systems. The most common example of this
+is as the core of the scripting engine found in GNU Bayonne.</p>
+
+<p>GNU ccScript uses a class hierarchy, and one extends the ScriptInterp base
+class to create a new dialect localized for a given applications. One then
+binds script keywords to method calls in the derived class. This aspect of
+GNU ccScript resembles in C++ the process of how one might localize Tcl.</p>
+
+<p>This library is intended for use where step execution is important, and
+where each step is in response to a callback event or a state machine
+transition. It offers deterministic execution and low overhead so that many
+concurrent instances can be running together.</p>
+
+<p>GNU ccScript can execute text files which form the basis of a script
+language. However, in addition to offering step machine execution, GNU
+ccScript loads all scripts into an active image at once. This is for
+performance, as all operations in the script system, to assure deterministic
+execution, are in memory.</p>
+
+<p>GNU ccScript also offers the ability to load new scripts in-mass.
+Existing active sessions operate on the currently loaded scripts, and new
+sessions are offered the new script. When the last active session on an old
+script set completes, the entire script set is flushed from memory. This
+enables one to operate scripted servers like GNU Bayonne without downtime to
+rebuild script images in memory.</p>
+
+<p>GNU ccScript is not stand-alone class library. ccScript3 is derived
+from and require the use of [GNU Common CPP Framework|GNU Common C++]. Later
+releases depend on uCommon.</p>
+
+<h3 id="status">Current Status</h3>
+
+<p>In 2017, the latest release is ccScript&nbsp;5.1.0.</p>
+
+<p>I am looking to add more database plugin modules for GNU ccScript.
+In particular I wish to add plugins for direct access to Postgres and MySQL,
+and for SQLite, as well as the current unixODBC-based plugin.</p>
+
+<h3 id="downloading">Downloading</h3>
+
+<p>Current releases of GNU ccScript are found on the <a
+href="https://ftp.gnu.org/gnu/ccscript/">GNU FTP site</a> or one of its <a
+href="/prep/ftp.html">mirrors</a>. Please use a <a
+href="https://ftpmirror.gnu.org/ccscript/">nearby mirror</a> if you can.
+
+<p>GNU ccScript may be available from other sites in various package formats,
+including GNU/Linux RPM and Debian packages, <code>.pkg</code> files under
+various Unix operating systems, etc. I do encourage people to distribute GNU
+ccScript3 in a package form where convenient for installation, so long as
+source is also made available.</p>
+
+<h3 id="documentation">Documentation</h3>
+
+<p>Class documentation can be generated from sources by Doxygen. It is also
+available online for</p>
+
+<ul>
+  <li><a href="refman/html/">ccScript 5.1.0</a>, and</li>
+
+  <li>ccScript3, as part of the larger <a
+  href="/software/commoncpp/commoncpp.html#doc">class framework documentation
+  for GNU Telephony</a> (several versions).</li>
+</ul>
+
+<p>Several versions of the Scripting Guide are available online:
+<ul>
+  <li>version 4, in <a href="/software/bayonne/script4.html">HTML</a> and <a
+  href="/software/bayonne/script4.tex">LaTeX</a> formats,</li>
+
+  <li><a href="https://web.archive.org/web/20150802040025/http://www.gnutelephony.org/index.php/Bayonne_2_Scripting_Guide">
+  version 2</a> (archived), and</li>
+
+  <li><a href="/software/bayonne/script.html">version 1</a>.</li>
+</ul>
+
+<h3 id="contributing">Contributing</h3>
+
+<p>As the current GNU ccScript maintainer, I am very open to bringing new
+ideas and code into GNU ccScript. In particular, I am looking for help with
+documentation. The source code repositories can be accessed anonymously
+through the <a href="https://sv.gnu.org/projects/ccscript/">GNU ccScript
+project</a> on Savannah; I would be happy to receive and evaluate patches for
+inclusion in future releases.</p>
+
+<p>The ccScript mailing list is <a
+href="mailto:ccscript-devel@gnu.org">&lt;ccscript-devel@gnu.org&gt;</a>. It
+has a <a href="https://lists.gnu.org/mailman/listinfo/ccscript-devel">web
+interface</a> for subscribing, modifying subscription options and searching
+the list archives. Feel free to send any bug reports, patches, and questions
+to this list.</p>
+
+<hr class="thin"/>
+
+<p>This page was retrieved from the <a
+href="https://web.archive.org/web/20070824030559/http://wiki.gnutelephony.org/index.php/GNU_ccScript3">
+GNU Telephony wiki</a> (archived at the Wayback Machine, licensed under the
+<a href="/licenses/old-licenses/fdl-1.2.html">Free Documentation
+License&nbsp;1.2</a>), and slightly edited.</p>
+
+</div><!-- for id="content", starts in the include above -->
+<!--#include virtual="/server/footer.html" -->
+<div id="footer">
+<div class="unprintable">
+
+<p>Please send general FSF &amp; GNU inquiries to
+<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
+There are also <a href="/contact/">other ways to contact</a>
+the FSF.  Broken links and other corrections or suggestions can be sent
+to <a href="mailto:bug-commoncpp@gnu.org">&lt;bug-commoncpp@gnu.org&gt;</a>.</p>
+
+<p>Please see the <a
+href="/server/standards/README.translations.html">Translations
+README</a> for information on coordinating and submitting translations
+of this article.</p>
+</div>
+
+<!-- Regarding copyright, in general, standalone pages (as opposed to
+     files generated as part of manuals) on the GNU web server should
+     be under CC BY-ND 4.0.  Please do NOT change or remove this
+     without talking with the webmasters or licensing team first.
+     Please make sure the copyright date is consistent with the
+     document.  For web pages, it is ok to list just the latest year the
+     document was modified, or published.
+     
+     If you wish to list earlier years, that is ok too.
+     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
+     years, as long as each year in the range is in fact a copyrightable
+     year, i.e., a year in which the document was published (including
+     being publicly visible on the web or in a revision control system).
+     
+     There is more detail about copyright years in the GNU Maintainers
+     Information document, www.gnu.org/prep/maintain. -->
+
+<p>Copyright &copy; 2006, 2017 Free Software Foundation, Inc.</p>
+
+<p>This page is licensed under a <a rel="license"
+href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
+Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
+
+<!--#include virtual="/server/bottom-notes.html" -->
+
+<p class="unprintable">Updated:
+<!-- timestamp start -->
+$Date: 2017/12/20 17:21:29 $
+<!-- timestamp end -->
 </p>
-<div class="editsection" style="float:right;margin-left:5px;">[<a href="http://wiki.gnutelephony.org/index.php?title=GNU_ccScript3&amp;action=edit&amp;section=1" title="GNU ccScript3">edit</a>]</div><a name="Introduction_to_GNU_ccScript3"></a><h2> Introduction to GNU ccScript3 </h2>
-<p>GNU ccScript is a C++ class framework for creating a virtual machine execution system for use with and as a scripting/assembler language for state-transition driven realtime systems. The most common example of this is as the core of the scripting engine found in GNU Bayonne.
-</p><p>GNU ccScript uses a class hierarchy and one extends the ScriptInterp base class to create a new dialect localized for a given applications. One then binds script keywords to method calls in the derived class. This aspect of GNU ccScript resembles in C++ the process of how one might localize tcl.
-</p><p>GNU ccScript is intended for use where step execution is important, and where each step is in response to a callback event or a state machine transition. It offers deterministic execution and low overhead so that many concurrent instances can be running together.
-</p><p>GNU ccScript can execute text files which form the basis of a script language. However, in addition to offering step machine execution, GNU ccScript loads all scripts into an active image at once. This is for performance, as all operations in the script system, to assure deterministic execution, are in memory.
-</p><p>GNU ccScript also offers the ability to load new scripts in-mass. Existing active sessions operate on the currently loaded scripts, and new sessions are offered the new script. When the last active session on an old script set completes, the entire script set is flushed from memory. This enables one to operate scripted servers like GNU Bayonne without downtime to rebuild script images in memory.
-</p><p>The current release of GNU ccScript, GNU ccScript3, is derived from and requires the use of [GNU Common CPP Framework|GNU Common C++]. It is not a stand-alone class library. 
-</p>
-<div class="editsection" style="float:right;margin-left:5px;">[<a href="http://wiki.gnutelephony.org/index.php?title=GNU_ccScript3&amp;action=edit&amp;section=2" title="GNU ccScript3">edit</a>]</div><a name="Current_Status"></a><h2> Current Status </h2>
-<p>I am looking to add more database plugin modules for GNU ccScript3.  In particular I wish to add plugins for direct access to Postgres and mysql, and for sqlite, as well as the current unixODBC based plugin.
-</p>
-<div class="editsection" style="float:right;margin-left:5px;">[<a href="http://wiki.gnutelephony.org/index.php?title=GNU_ccScript3&amp;action=edit&amp;section=3" title="GNU ccScript3">edit</a>]</div><a name="Downloading_and_Documentation"></a><h2> Downloading and Documentation </h2>
-<p>Current releases of GNU ccScript3 will be found on the <a href="ftp://ftp.gnu.org/pub/gnu/ccscript/" class='external text' title="ftp://ftp.gnu.org/pub/gnu/ccscript/" rel="nofollow">GNU</a> site or one of the GNU mirrors.  It is also available from the <a href="http://wiki.gnutelephony.org/index.php/Download_Page" title="Download Page">Download Page</a>.
-</p><p>GNU ccScript3 may be available from other sites in various "package" formats, including GNU/Linux "RPM" and "deb" packages, ".pkg" files under various Unix operating systems, etc. I do encourage people to distribute GNU ccScript3 in a package form where convenient for installation, so long as source is also made available.
-</p><p>Online <a href="http://data.gnutelephony.org/docs/framework/index.html" class='external text' title="http://data.gnutelephony.org/docs/framework/index.html" rel="nofollow">Documentation</a> is maintained as part of the larger class framework documentation for GNU Telephony.
-</p>
-<div class="editsection" style="float:right;margin-left:5px;">[<a href="http://wiki.gnutelephony.org/index.php?title=GNU_ccScript3&amp;action=edit&amp;section=4" title="GNU ccScript3">edit</a>]</div><a name="Contributing_to_GNU_ccScript3"></a><h2> Contributing to GNU ccScript3 </h2>
-<p>As the current GNU ccScript maintainer, I am very open to bringing new ideas and code into GNU ccScript. In particular, I am looking for help with documentation. Anonymous cvs access is maintained for GNU ccScript thru savannah, and I would be happy to receive and evaluate patches for inclusion in future releases. A standard e-mail mailing list for GNU ccScript will be available shortly on <a href="mailto:ccscript-devel@gnu.org" class='external text' title="mailto:ccscript-devel@gnu.org" rel="nofollow">ccscript-devel@gnu.org</a>. Feel free to send any bug reports, patches, and questions to this list.
-</p><div class="printfooter">
-Retrieved from "<a href="http://wiki.gnutelephony.orghttp://wiki.gnutelephony.org/index.php/GNU_ccScript3">http://wiki.gnutelephony.orghttp://wiki.gnutelephony.org/index.php/GNU_ccScript3</a>"</div>
-	    	    <!-- end content -->
-	    <div class="visualClear"></div>
-	  </div>
-	</div>
-      </div>
-      <div id="column-one">
-		<div class="portlet" id="p-logo">
-	  <a style="background-image: url(/skins/common/images/wiki.png);"
-	    href="http://wiki.gnutelephony.org/index.php/Main_Page"
-	    title="Main Page"></a>
-	</div>
-	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
-		<div class='portlet' id='p-navigate'>
-	  <h5><span class="w1"><span class="w2">navigate</span></span></h5>
-	  <div class='pBody'>
-	    <ul>
-	    	      <li id="n-mainpage"><a href="http://wiki.gnutelephony.org/index.php/Main_Page">Main Page</a></li>
-	     	      <li id="n-User-Login"><a href="http://wiki.gnutelephony.org/index.php/Special:Userlogin">User Login</a></li>
-	     	      <li id="n-Bug-Tracking"><a href="http://sourceforge.net/projects/gnutelephony ">Bug Tracking</a></li>
-	     	      <li id="n-Contacting-Us"><a href="http://wiki.gnutelephony.org/index.php/Contacting_Us">Contacting Us</a></li>
-	     	      <li id="n-Documentation"><a href="http://wiki.gnutelephony.org/index.php/Documentation">Documentation</a></li>
-	     	      <li id="n-Download"><a href="http://wiki.gnutelephony.org/index.php/Download_Page">Download</a></li>
-	     	      <li id="n-Events"><a href="http://wiki.gnutelephony.org/index.php/Events_Page">Events</a></li>
-	     	      <li id="n-FAQ-Index"><a href="http://wiki.gnutelephony.org/index.php/FAQ">FAQ Index</a></li>
-	     	      <li id="n-Howto-Index"><a href="http://wiki.gnutelephony.org/index.php/Howto">Howto Index</a></li>
-	     	      <li id="n-Ideas"><a href="http://wiki.gnutelephony.org/index.php/Ideas_Page">Ideas</a></li>
-	     	      <li id="n-Latest-News"><a href="http://wiki.gnutelephony.org/index.php/News_Page">Latest News</a></li>
-	     	      <li id="n-Our-Packages"><a href="http://wiki.gnutelephony.org/index.php/Packages">Our Packages</a></li>
-	     	      <li id="n-Special-Projects"><a href="http://wiki.gnutelephony.org/index.php/Projects">Special Projects</a></li>
-	     	      <li id="n-Things-To-Do"><a href="http://wiki.gnutelephony.org/index.php/Todo_Page">Things To Do</a></li>
-	     	      <li id="n-Useful-Links"><a href="http://wiki.gnutelephony.org/index.php/Links">Useful Links</a></li>
-	     	      <li id="n-User-Pages"><a href="http://wiki.gnutelephony.org/index.php/User_Pages">User Pages</a></li>
-	     	      <li id="n-Recent-Changes"><a href="http://wiki.gnutelephony.org/index.php/Special:Recentchanges">Recent Changes</a></li>
-	     	      <li id="n-Random-Page"><a href="http://wiki.gnutelephony.org/index.php/Special:Random">Random Page</a></li>
-	     	      <li id="n-sitesupport"><a href="http://wiki.gnutelephony.org/index.php/GNU_Telephony:Site_support">Donations</a></li>
-	     	      <li id="n-help"><a href="http://wiki.gnutelephony.org/index.php/Help:Contents">Help</a></li>
-	     	    </ul>
-	  </div>
-	</div>
-	<br>
-		<div id="p-search" class="portlet">
-	  <h5><label for="searchInput">Search</label></h5>
-	  <div class="pBody">
-	    <form name="searchform" action="http://wiki.gnutelephony.org/index.php/Special:Search" id="searchform">
-	      <input id="searchInput" name="search" type="text"
-	        accesskey="f" value="" />
-	      <input type='submit' name="go" class="searchButton" id="searchGoButton"
-	        value="Go"
-	        />&nbsp;<input type='submit' name="fulltext"
-	        class="searchButton"
-	        value="Search" />
-	    </form>
-	  </div>
-	</div>
-		      </div><!-- end of the left (by default at least) column -->
-      <div class="visualClear"></div>
-      <div id="footer">
-    <div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="/skins/common/images/poweredby_mediawiki_88x31.png" alt="MediaWiki" /></a></div>	<ul id="f-list">
-	  <li id="f-login"><a href="http://wiki.gnutelephony.orghttp://wiki.gnutelephony.org/index.php/Special:Userlogin">Login</a></li>
-	  <li id="f-viewcount">This page has been accessed 1 times.</li>	  	  	  <li id="f-about"><a href="http://wiki.gnutelephony.org/index.php/GNU_Telephony:About" title="GNU Telephony:About">About GNU Telephony</a></li>	  <li id="f-disclaimer"><a href="http://wiki.gnutelephony.org/index.php/GNU_Telephony:General_disclaimer" title="GNU Telephony:General disclaimer">Disclaimers</a></li>	  <div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="/skins/common/images/gnu-fdl.png" alt='GNU Free Documentation License 1.2' /></a></div>	  <li id="f-lastmod"> This page was last modified 21:42, 3 June 2006.</li>	  <li id="f-copyright">Content is available under <a href="http://www.gnu.org/copyleft/fdl.html" class='external ' title="http://www.gnu.org/copyleft/fdl.html" rel="nofollow">GNU Free Documentation License 1.2</a>.</li>	  	</ul>
-      </div>
-    </div>
-    <!-- Served by stallman in 0.22 secs. -->  </body>
+</div>
+</div>
+</body>
 </html>
