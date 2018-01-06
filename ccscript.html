@@ -7,27 +7,27 @@
 <h2>GNU ccScript</h2>
 
 <p class="navlinks">
- <a href="/software/gnucomm/gnucomm.html"><strong>GnuComm</strong></a>&nbsp;
- &nbsp;<a href="/software/bayonne/bayonne.html">Bayonne</a>&nbsp;
- &nbsp;<a href="/software/sipwitch/sipwitch.html">SIP&nbsp;Witch</a>&nbsp;
- &nbsp;<a href="/software/commoncpp/commoncpp.html">[u]Common&nbsp;C++</a>&nbsp;
- &nbsp;<a class="current" href="/software/ccscript/ccscript.html">ccScript</a>&nbsp;
- &nbsp;<a href="/software/ccaudio/ccaudio.html">ccAudio2</a>&nbsp;
- &nbsp;<a href="/software/ccrtp/ccrtp.html">ccRTP</a>&nbsp;
- &nbsp;<a href="/software/ccrtp/zrtp.html">ZRTP</a>&nbsp;
- &nbsp;<a href="/software/ccrtp/zrtp4j.html">ZRTP4J</a>&nbsp;
+ <a href="/software/gnucomm/gnucomm.html#content"><strong>GnuComm</strong></a>&nbsp;
+ &nbsp;<a href="/software/bayonne/bayonne.html#content">Bayonne</a>&nbsp;
+ &nbsp;<a href="/software/sipwitch/sipwitch.html#content">SIP&nbsp;Witch</a>&nbsp;
+ &nbsp;<a href="/software/commoncpp/commoncpp.html#content">[u]Common&nbsp;C++</a>&nbsp;
+ &nbsp;<a class="current" href="/software/ccscript/ccscript.html#content">ccScript</a>&nbsp;
+ &nbsp;<a href="/software/ccaudio/ccaudio.html#content">ccAudio2</a>&nbsp;
+ &nbsp;<a href="/software/ccrtp/ccrtp.html#content">ccRTP</a>&nbsp;
+ &nbsp;<a href="/software/ccrtp/zrtp.html#content">ZRTP</a>&nbsp;
+ &nbsp;<a href="/software/ccrtp/zrtp4j.html#content">ZRTP4J</a>&nbsp;
  &nbsp;<a class="spacer"></a>&nbsp;
- &nbsp;<a href="/software/gnucomm/download.html">DOWNLOAD</a>
+ &nbsp;<a href="/software/gnucomm/download.html#content">DOWNLOAD</a>
 </p>
 
 <div class="table-of-contents">
 <h3>Contents</h3>
 <ul>
   <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#status">Current Status</a></li>
+  <li><a href="#development">Development</a></li>
   <li><a href="#downloading">Downloading</a></li>
   <li><a href="#documentation">Documentation</a></li>
-  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#participating">Participating</a></li>
 </ul>
 <hr style="display: none" />
 </div>
@@ -42,7 +42,7 @@ state-transition driven realtime systems. The most common example of this
 is as the core of the scripting engine found in GNU Bayonne.</p>
 
 <p>GNU ccScript uses a class hierarchy, and one extends the ScriptInterp base
-class to create a new dialect localized for a given applications. One then
+class to create a new dialect localized for a given application. One then
 binds script keywords to method calls in the derived class. This aspect of
 GNU ccScript resembles in C++ the process of how one might localize Tcl.</p>
 
@@ -64,17 +64,17 @@ script set completes, the entire script set is flushed from memory. This
 enables one to operate scripted servers like GNU Bayonne without downtime to
 rebuild script images in memory.</p>
 
-<p>GNU ccScript is not stand-alone class library. ccScript3 is derived
-from and require the use of [GNU Common CPP Framework|GNU Common C++]. Later
-releases depend on uCommon.</p>
+<p>The current release of GNU ccScript is derived from and requires the use
+of <a href="/software/commoncpp/commoncpp.html">GNU uCommon C++</a>. It is
+not a standalone class library.</p>
 
-<h3 id="status">Current Status</h3>
+<h3 id="development">Development</h3>
 
-<p>In 2017, the latest release is ccScript&nbsp;5.1.0.</p>
+<p>[2017] &ndash; The latest release is ccScript&nbsp;5.1.0.</p>
 
-<p>I am looking to add more database plugin modules for GNU ccScript.
-In particular I wish to add plugins for direct access to Postgres and MySQL,
-and for SQLite, as well as the current unixODBC-based plugin.</p>
+<p>[2014] &ndash; I am looking to add more database plugin modules for GNU
+ccScript. In particular I wish to add plugins for direct access to Postgres and
+MySQL, and for SQLite, as well as the current unixODBC-based plugin.</p>
 
 <h3 id="downloading">Downloading</h3>
 
@@ -115,7 +115,7 @@ available online for</p>
   <li><a href="/software/bayonne/script.html">version 1</a>.</li>
 </ul>
 
-<h3 id="contributing">Contributing</h3>
+<h3 id="participating">Participating</h3>
 
 <p>As the current GNU ccScript maintainer, I am very open to bringing new
 ideas and code into GNU ccScript. In particular, I am looking for help with
@@ -133,11 +133,11 @@ to this list.</p>
 
 <hr class="column-limit" />
 
-<p>This page was retrieved from the <a
-href="https://web.archive.org/web/20070824030559/http://wiki.gnutelephony.org/index.php/GNU_ccScript3">
-GNU Telephony wiki</a> (archived at the Wayback Machine, licensed under the
-<a href="/licenses/old-licenses/fdl-1.2.html">Free Documentation
-License&nbsp;1.2</a>), and slightly edited.</p>
+<p>This page was retrieved from the Wayback Machine archive of the <a
+href="https://web.archive.org/web/20141002101028/http://www.gnutelephony.org/index.php/GNU_ccScript">
+GNU Telephony website</a> (licensed under the
+<a href="/licenses/fdl-1.3.html">Free Documentation License&nbsp;1.3</a>),
+and slightly edited.</p>
 
 </div><!-- .article -->
 </div><!-- for id="content", starts in the include above -->
@@ -174,7 +174,7 @@ of this article.</p>
      There is more detail about copyright years in the GNU Maintainers
      Information document, www.gnu.org/prep/maintain. -->
 
-<p>Copyright &copy; 2006, 2017 Free Software Foundation, Inc.</p>
+<p>Copyright &copy; 2006, 2014, 2017 Free Software Foundation, Inc.</p>
 
 <p>This page is licensed under a <a rel="license"
 href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
@@ -184,7 +184,7 @@ Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
 
 <p class="unprintable">Updated:
 <!-- timestamp start -->
-$Date: 2017/12/29 21:12:25 $
+$Date: 2018/01/06 22:14:43 $
 <!-- timestamp end -->
 </p>
 </div>
